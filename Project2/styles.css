@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: #7ADFFF;
+}
+.container{
+    display: grid;
+}
+.box{
+    background: white;
+    width: 100%;
+    
+}
+@media screen and (min-width: 835px){
+    .container{
+        margin: 72px 120px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px; 
+    }
+    .box{
+        height: 269px;
+    }
+}
+@media screen and (max-width: 834px){
+    .container{
+        margin: 48px 60px;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    .box{
+        height: 277px;
+    }
+}
+@media screen and (max-width: 358px){
+    .container{
+        margin: 32px 16px;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .box{
+        height: 277px;
+    }
+}
